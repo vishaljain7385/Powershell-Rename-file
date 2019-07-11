@@ -1,0 +1,9 @@
+Get-ChildItem 'E:\Sandeep_Servers_VS\test' -filter *.bak | rename-item -NewName {$_.name.substring(0,$_.BaseName.length-33) + $_.Extension}
+
+
+
+
+
+OLDone it include replace something
+
+Get-ChildItem 'E:\Thomson Reuters\Stage' -filter *.txt | rename-item -NewName {$_.name.substring(0,$_.BaseName.length-6) + $_.Extension -replace "_"," "}
